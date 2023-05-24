@@ -1,0 +1,172 @@
+/* 共通スタイルは外に書く */
+
+@media screen and (min-width: 796px) {
+  /* pc用スタイル */
+  .p-headerTitle {
+    font-size: 5vw;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .p-spBr {
+    display: none; /*320px以上では改行タグを無効に*/
+  }
+  .p-headerPcLogo {
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin: 10px 20px;
+  }
+  /* パソコンで見たときは表示される */
+  .p-headerPc {
+    display: block !important;
+  }
+  .p-headerSp {
+    display: none !important;
+  }
+  .p-headerPcList {
+    width: 100%;
+    /*float: right;*/
+  }
+  .p-headerPcList ul {
+    margin: 0;
+  }
+  .p-headerPcList li {
+    float: right;
+    margin: 20px;
+    list-style: none;
+    color: white;
+  }
+  /* ------------------------------ */
+  /* about*/
+  /* ------------------------------ */
+  .imgFirst {
+    width: 55%;
+    margin-right: 5%;
+  }
+  .imgSecond {
+    width: 40%;
+  }
+  .imgThird {
+    width: 40%;
+    margin-right: 5%;
+    margin-top: 40px;
+  }
+  .imgForth {
+    width: 55%;
+    margin-top: 40px;
+  }
+}
+/*画面幅によって画像とテキストの比率を変える  ↑*/
+.p-column {
+  color: #595959;
+  font-weight: normal;
+  margin: 2% 0;
+}
+.p-text {
+  color: grey;
+  margin-bottom: 6%;
+}
+
+@media screen and (max-width: 795px) {
+  /* sp用スタイル */
+  .p-headerPc {
+    display: none !important;
+  }
+  .p-headerSp {
+    display: block !important;
+  }
+  .p-headerSpMenu {
+    float: right;
+    margin: 38px;
+  }
+  /*
+ハンバーガーメニュー
+*/
+  .p-hamburger {
+    width: 30px;
+    height: 24px;
+    position: relative;
+  }
+
+  .p-hamburgerBar {
+    display: block;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    background: rgb(255, 255, 255);
+  }
+
+  .p-hamburgerBar:nth-child(1) {
+    top: 0;
+  }
+
+  .p-hamburgerBar:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .p-hamburgerBar:nth-child(3) {
+    top: 100%;
+    transform: translateY(-100%);
+  }
+
+  /* リセットCSS */
+  button {
+    border-color: transparent;
+    background: transparent;
+    cursor: pointer;
+  }
+  /* ↑ハンバーガーロゴここまで*/
+  .p-headerTitle {
+    font-size: 5vw;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .p-spBr {
+    display: none; /*320px以上では改行タグを無効に*/
+  }
+}
+@media screen and (max-width: 375px) {
+  .p-columnBold,
+  .p-columnNormal,
+  .p-columnLight {
+    margin-top: 20px;
+  }
+  .p-headerTitle {
+    font-size: 11vw;
+    white-space: nowrap;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .p-spBr {
+    display: none; /*320px以上では改行タグを無効に*/
+  }
+  .p-column {
+    color: #595959;
+    font-weight: normal;
+    margin: 6% 0;
+  }
+  .p-text {
+    color: grey;
+    margin-bottom: 20%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .p-spBr {
+    display: block; /*320px以下で改行タグを有効に*/
+  }
+}

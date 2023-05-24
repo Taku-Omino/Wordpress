@@ -1,0 +1,153 @@
+@media screen and (min-width: 796px) {
+  /* pc用スタイル */
+  .p-about {
+    padding-top: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 100px;
+  }
+  .p-aboutMainTitle {
+    font-size: 3vw;
+    text-align: center;
+    color: #595959;
+  }
+  /*  見出しセンター  オレンジ下線  */
+  .p-aboutConceptWrap {
+    text-align: center;
+  }
+  .p-aboutConcept {
+    text-align: center;
+    margin: 30px 0;
+    position: relative;
+    display: inline-block;
+    color: grey;
+    font-size: 2vw;
+  }
+  .p-aboutConceptWrap .p-aboutConcept::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -50px; /*修正前-40px */
+    border-bottom: 3px solid #ffd743;
+    width: 15%;
+    margin: 0 auto;
+  }
+  .p-aboutTitle {
+    font-size: 2vw;
+    margin: 35px 0;
+    text-align: center;
+    color: #595959;
+    font-weight: normal;
+  }
+  .p-aboutConcept {
+    text-align: center;
+  }
+  .p-aboutSlider {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 90px;
+  }
+  .p-aboutSlider__flexItem {
+    height: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 795px) {
+  /* sp用スタイル */
+  .p-about {
+    margin: 80px 20px 0 20px;
+  }
+  .p-about,
+  .p-aboutMainTitle {
+    font-size: 5vw;
+    text-align: center;
+    color: #595959;
+  }
+  .p-aboutConceptWrap {
+    text-align: center;
+  }
+  .p-aboutConcept {
+    margin-bottom: 2%;
+    text-align: center;
+    margin: 30px 0;
+    position: relative;
+    display: inline-block;
+    color: grey;
+    font-size: 2.2vw;
+  }
+  .p-aboutConceptWrap .p-aboutConcept::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -50px;
+    border-bottom: 3px solid #ffd743;
+    width: 17%;
+    margin: 0 auto;
+  }
+  .p-aboutTitle {
+    font-size: 20px;
+    margin: 4% 0;
+    text-align: center;
+    color: #595959;
+    font-weight: normal;
+  }
+  .p-aboutConcept {
+    text-align: center;
+  }
+  .p-aboutSlider {
+    margin-top: 90px;
+  }
+  .p-aboutSlider__flexItem {
+    border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 5%;
+    height: 200px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .p-about,
+  .p-aboutMainTitle {
+    font-size: 8vw;
+    text-align: center;
+    color: #595959;
+  }
+  .p-aboutConcept {
+    text-align: center;
+    font-size: 5vw;
+  }
+  .p-aboutConceptWrap .p-aboutConcept::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -50px;
+    border-bottom: 2px solid #ffd743;
+    width: 30%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .p-about,
+  .p-aboutMainTitle {
+    font-size: 10vw;
+    text-align: center;
+    color: #595959;
+  }
+  .p-aboutConcept {
+    line-height: 1.8;
+    text-align: center;
+    font-size: 5.5vw;
+  }
+  .p-aboutTitle {
+    font-size: 20px;
+    margin: 9% 0;
+    text-align: center;
+    color: #595959;
+  }
+}
