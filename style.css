@@ -1,0 +1,23 @@
+.post-thumb {
+  width: 883px;
+  height: 550px;
+}
+
+.facebook-share {
+  background-color: #3b5998; /* Facebookのブランドカラー */
+  border-radius: 50%; /* ボタンを円形にする */
+  color: white; /* テキストの色 */
+  /* その他のスタイル */
+}
+
+.twitter-share {
+  background-color: #1da1f2; /* Twitterのブランドカラー */
+  border-radius: 50%; /* ボタンを円形にする */
+  color: white; /* テキストの色 */
+  /* その他のスタイル */
+}
+
+.post-share {
+  display: flex;
+  justify-content: center; /* ボタンを中央に配置 */
+}
